@@ -22,6 +22,10 @@ inputs:
     owner: 
         description: 'Deploy owner'
         required: true
+    useArtisan: 
+        description: 'Disables the artisan migrate and cache-cleaing commands if set to "0"'
+        required: false
+        default: '1'
     commands: 
         description: 'Command to run after default artisan commands'
         required: false
@@ -34,4 +38,5 @@ runs:
         -   ${{ inputs.port }}
         -   ${{ inputs.path }}
         -   ${{ inputs.owner }}
+        -   ${{ inputs.useArtisan }}
         -   ${{ inputs.commands }}
