@@ -17,8 +17,12 @@ inputs:
         description: 'Deploy port'
         required: false
     path: 
-        description: 'Path source on server'
+        description: 'Path on server'
         required: true
+    sourcePath:
+        description: 'Path source in project if not the hole project should be deployd (i.e. vue-projects)'
+        required: true
+        default: '.'
     owner: 
         description: 'Deploy owner'
         required: true
