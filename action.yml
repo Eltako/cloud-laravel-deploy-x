@@ -41,6 +41,7 @@ runs:
         -   ${{ inputs.host }}
         -   ${{ inputs.port }}
         -   ${{ inputs.path }}
+        -   ${{ inputs.sourcePath }}
         -   ${{ inputs.owner }}
         -   ${{ inputs.useArtisan }}
         -   ${{ inputs.commands }}
