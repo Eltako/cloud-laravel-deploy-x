@@ -41,6 +41,7 @@ rsync --progress -avzh \
 	--exclude='README.md' \
 	-e "ssh -i /root/.ssh/id_rsa" $PATH_SOURCE \
 	$SSH_USER@$SSH_HOST:$PATH_TARGET
+	--delete
 
 if [ $? -eq 0 ]
 then
