@@ -39,6 +39,7 @@ rsync --progress -avzh \
 	--exclude='Dockerfile' \
 	--exclude='readme.md' \
 	--exclude='README.md' \
+	--exclude='storage/' \
 	-e "ssh -i /root/.ssh/id_rsa" $PATH_SOURCE \
 	$SSH_USER@$SSH_HOST:$PATH_TARGET \
 	--delete
