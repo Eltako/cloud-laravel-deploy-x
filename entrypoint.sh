@@ -37,6 +37,8 @@ rsync --progress -avzh \
 	--exclude='.styleci.yml' \
 	--exclude='.idea/' \
 	--exclude='Dockerfile' \
+ 	--exclude='docker-compose.yml' \
+  	--exclude='passenger.*' \
 	--exclude='readme.md' \
 	--exclude='README.md' \
 	--exclude='storage/' \
