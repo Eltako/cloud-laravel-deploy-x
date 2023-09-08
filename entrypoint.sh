@@ -39,7 +39,8 @@ rsync --progress -avzh \
 	--exclude='Dockerfile' \
  	--exclude='docker-compose.yml' \
   	--exclude='passenger.*' \
-	--exclude='readme.md' \
+	--exclude='venv/' \
+ 	--exclude='readme.md' \
 	--exclude='README.md' \
 	--exclude='storage/' \
 	--exclude='.env' \
