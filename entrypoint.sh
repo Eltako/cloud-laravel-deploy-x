@@ -62,7 +62,7 @@ then
 
 	if [ "$USE_ARTISAN" -eq 1 ]
 	then
-		ssh -i /root/.ssh/id_rsa -t $SSH_USER@$SSH_HOST "cd $PATH_TARGET && /opt/plesk/php/8.1/bin/php artisan migrate && /opt/plesk/php/8.1/bin/php artisan cache:clear && /opt/plesk/php/8.1/bin/php artisan route:cache && /opt/plesk/php/8.1/bin/php artisan config:cache"
+		ssh -i /root/.ssh/id_rsa -t $SSH_USER@$SSH_HOST "cd $PATH_TARGET && /opt/plesk/php/8.2/bin/php artisan migrate && /opt/plesk/php/8.2/bin/php artisan cache:clear && /opt/plesk/php/8.2/bin/php artisan route:cache && /opt/plesk/php/8.2/bin/php artisan config:cache"
 	fi
 
 	if [ ! -z "$COMMANDS" ];
