@@ -48,7 +48,6 @@ rsync --progress -avzh \
  	--exclude='.php-version' \
   	--exclude='.php-ini' \
    	--exclude='.htaccess' \
-        --exclude='.htaccess' \
 	--exclude='.htpasswd' \
 	--exclude='public/' \
 	-e "ssh -i /root/.ssh/id_rsa" $PATH_SOURCE \
