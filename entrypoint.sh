@@ -45,6 +45,11 @@ rsync --progress -avzh \
 	--exclude='README.md' \
 	--exclude='storage/' \
 	--exclude='.env' \
+ 	--exclude='.php-version' \
+  	--exclude='.php-ini' \
+   	--exclude='.htaccess' \
+        --exclude='.htaccess' \
+	--exclude='.htpasswd' \
 	--exclude='public/' \
 	-e "ssh -i /root/.ssh/id_rsa" $PATH_SOURCE \
 	$SSH_USER@$SSH_HOST:$PATH_TARGET \
