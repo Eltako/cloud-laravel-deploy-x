@@ -44,6 +44,7 @@ rsync --progress -avzh \
  	--exclude='readme.md' \
 	--exclude='README.md' \
 	--exclude='storage/' \
+ 	--exclude='files/' \
 	--exclude='.env' \
  	--exclude='.php-version' \
   	--exclude='.php-ini' \
